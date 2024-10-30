@@ -10,3 +10,21 @@ body {
     color-scheme: dark;
   }
 }
+
+@layer base {
+  @font-face {
+    font-family: 'urbanist';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/fonts/Urbanist-VariableFont_wght.ttf) format('woff2');
+  }
+
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/fonts/Inter.ttf) format('woff2');
+  }
+}

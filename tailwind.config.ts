@@ -1,3 +1,4 @@
+import { c } from "node_modules/vite/dist/node/types.d-aGj9QkWt";
 import type { Config } from "tailwindcss";
 
 export default {
@@ -15,6 +16,8 @@ export default {
           '"Segoe UI Symbol"',
           '"Noto Color Emoji"',
         ],
+        urbanist: ["urbanist","sans-serif"],
+        inter: ["Inter", "sans-serif"],
       },
     },
   },
