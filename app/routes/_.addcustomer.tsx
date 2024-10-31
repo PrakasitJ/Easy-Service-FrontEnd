@@ -1,4 +1,4 @@
-import { Link } from "@remix-run/react";
+import { Link, useNavigate } from "@remix-run/react";
 import { useState } from "react";
 import { DOMAIN } from "./server/domain";
 
@@ -10,6 +10,7 @@ export default function AddCustomer() {
   const [province, setProvince] = useState("");
   const [creditLimit, setCreditLimit] = useState<number>(0);
   const [error, setError] = useState("");
+  const navigate = useNavigate();
 
   async function handleAddCustomer() {
     if (
@@ -36,7 +37,7 @@ export default function AddCustomer() {
       }),
     });
 
-    window.location.href = "/customerList";
+    navigate("/customerList");
   }
 
   return (
