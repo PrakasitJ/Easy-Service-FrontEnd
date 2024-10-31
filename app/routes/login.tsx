@@ -51,7 +51,7 @@ export default function Login() {
   return (
     <div className="flex flex-col justify-center items-center w-svw h-svh bg-gray-50">
       <div className="flex flex-col justify-center items-center w-[25rem] h-fit gap-5 bg-white rounded-xl shadow-xl p-10">
-        <h1 className="mb-4 font-bold text-2xl">Login to your account</h1>
+        <h1 className="mb-4 font-bold text-2xl text-black">Login to your account</h1>
         <input
           className="w-full h-fit bg-[#FAFAFA] p-2 pl-4 text-black rounded-xl font-bold"
           type="text"
@@ -68,7 +68,7 @@ export default function Login() {
         <div className="flex flex-row w-full justify-between">
           <div className="flex flex-row w-fit gap-2 items-center justify-center">
             <input type="checkbox" />
-            <h1 className="w-full font-medium text-xs">Remember me</h1>
+            <h1 className="w-full font-medium text-xs text-black">Remember me</h1>
           </div>
           <h1 className="w-fit text-[#9FA324] text-xs font-bold">
             Forget Password?

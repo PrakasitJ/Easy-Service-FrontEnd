@@ -1,7 +1,6 @@
 import { Link } from "@remix-run/react";
 import { useState } from "react";
 import { DOMAIN } from "./server/domain";
-import { s } from "node_modules/vite/dist/node/types.d-aGj9QkWt";
 
 export default function AddCustomer() {
   const [name, setName] = useState("");
