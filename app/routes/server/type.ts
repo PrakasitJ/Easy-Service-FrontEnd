@@ -6,7 +6,7 @@ interface User {
   address: string;
   province: string;
   role: string;
-  addDate: Date;
+  add_date: Date;
 }
 
 interface Customer {
@@ -16,7 +16,7 @@ interface Customer {
   address: string;
   tax_id: string;
   tel: string;
-  addDate: string;
+  add_date: string;
   province: Date;
 }
 
@@ -27,7 +27,7 @@ interface CustomerEdit {
     address?: string;
     tax_id?: string;
     tel?: string;
-    addDate?: string;
+    add_date?: string;
     province?: Date;
   }
 

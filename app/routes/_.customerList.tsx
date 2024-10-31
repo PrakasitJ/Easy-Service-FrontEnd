@@ -80,7 +80,7 @@ export default function CustomerList() {
       editable: false,
       align: "center",
       headerAlign: "center",
-      valueGetter: (value, row) => `${new Date(row.addDate).toUTCString()}`,
+      valueGetter: (value, row) => `${new Date(row.add_date).toUTCString()}`,
     },
   ];
 
