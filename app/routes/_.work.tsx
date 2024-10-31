@@ -12,12 +12,13 @@ export default function Work() {
   useEffect(() => {
     setAddress(sessionStorage.getItem("address") || "No Data");
     setProvince(sessionStorage.getItem("province") || "No Data");
-    const id = Array.from(sessionStorage.getItem("selectedCustomer") || "");
-    setId(parseInt(id[1]));
+    const list_id = sessionStorage.getItem("selectedCustomer") || "";
+    const id = list_id.match(/\d+/);
+    setId(parseInt(id![0]));
 
     async function fetchCustomer() {
       const response = await fetch(
-        `${DOMAIN}/customers/getByID/` + parseInt(id[1])
+        `${DOMAIN}/customers/getByID/` + parseInt(id![0])
       );
       const data: Customer[] = await response.json();
       setCustomer(data[0]);
